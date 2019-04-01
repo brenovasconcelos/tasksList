@@ -1,0 +1,78 @@
+@import "mixin";
+
+body {
+  background-color: black;
+  /*background-image: url("/images/main-background.jpg")*/
+  margin: 0;
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 600px;
+}
+.new-task {
+  background-color: lightgray;
+  padding: 10px 12px;
+  border-radius: 2px;
+  @include box-shadow(3);
+
+  &__input {
+    width: 100%;
+    border: none;
+    background-color: lightgray;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.search-task {
+  width: 88%;
+  background-color: lightgray;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin: 10px 10px 10px 0px;
+
+  @include box-shadow(3);
+
+  &__clean {
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+  }
+  &__filter {
+    border: 0;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    padding: 10px;
+  }
+}
+.task-list {
+  margin: 40px 0;
+}
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: lightgray;
+  padding: 10px 12px;
+  border-radius: 2px;
+  @include box-shadow(3);
+
+  &__text {
+    flex: 1;
+  }
+  &__button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+
+    &--hidden {
+      visibility: hidden;
+    }
+  }
+}
