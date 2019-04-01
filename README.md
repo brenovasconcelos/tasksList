@@ -1,4 +1,4 @@
-# tasksList
+# Tasks List
 
 Projeto parcialmente feito.
 Ao adicionar ou remover uma task, o componente de listagem não atualiza sozinho. 
